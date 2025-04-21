@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>عاطفه اسمعیلی‌نژاد | تدریس خصوصی</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #6c63ff;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    nav {
+      background: #514bcf;
+      padding: 0.5em;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1em;
+      color: white;
+      text-decoration: none;
+    }
+    section {
+      padding: 2em;
+      max-width: 900px;
+      margin: auto;
+    }
+    .contact, .form, .schedule, .testimonials, .gallery, .teachers {
+      margin-top: 3em;
+      background: white;
+      padding: 1.5em;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #6c63ff;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+    }
+    .lang-toggle {
+      position: absolute;
+      top: 1em;
+      left: 1em;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.5em;
+      margin: 0.5em 0;
+    }
+    button {
+      background: #6c63ff;
+      color: white;
+      padding: 0.7em 1.5em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .teacher-card {
+      border: 1px solid #ddd;
+      padding: 1em;
+      margin: 1em 0;
+      border-radius: 10px;
+      background: #fafafa;
+    }
+    .teacher-card h4 {
+      margin: 0.2em 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="lang-toggle">
+    <button onclick="toggleLanguage()">English</button>
+  </div>
+
+  <header>
+    <h1 id="name">عاطفه اسمعیلی‌نژاد</h1>
+    <p id="title">معلم پایه چهارم ابتدایی | تدریس خصوصی دروس و مهارت‌ها</p>
+  </header>
+
+  <nav>
+    <a href="#about">درباره من</a>
+    <a href="#teachers">معرفی معلمان</a>
+    <a href="#form">ثبت‌نام</a>
+    <a href="#schedule">زمان‌بندی</a>
+    <a href="#testimonials">نظرات</a>
+    <a href="#gallery">گالری</a>
+  </nav>
+
+  <section id="about">
+    <h2>درباره من</h2>
+    <p id="about-text">من عاطفه اسمعیلی‌نژاد، معلم پایه چهارم ابتدایی با تجربه هستم که دروس ابتدایی (پایه اول تا ششم) و مهارت‌های متنوعی مانند رباتیک، برنامه‌نویسی آردوینو، چرتکه، روبیک و کامپیوتر را به صورت خصوصی تدریس می‌کنم.</p>
+  </section>
+
+  <section class="teachers" id="teachers">
+    <h2>معرفی معلمان</h2>
+    <div class="teacher-card">
+      <h3>نام معلم</h3>
+      <h4>تخصص: مثال: ریاضی ابتدایی</h4>
+      <p>توضیح کوتاه درباره معلم و روش تدریس او...</p>
+      <p>راه ارتباط: شماره تماس یا ایمیل</p>
+    </div>
+    <p>برای افزودن معلمان بیشتر، این بخش قابل بروزرسانی است.</p>
+  </section>
+
+  <section class="form" id="form">
+    <h2>فرم ثبت‌نام</h2>
+    <form>
+      <input type="text" placeholder="نام و نام خانوادگی">
+      <input type="tel" placeholder="شماره تماس">
+      <textarea placeholder="پیام شما"></textarea>
+      <button type="submit">ارسال</button>
+    </form>
+  </section>
+
+  <section class="schedule" id="schedule">
+    <h2>زمان‌بندی کلاس‌ها</h2>
+    <p>برای هماهنگی کلاس‌ها لطفاً از طریق واتساپ با من در ارتباط باشید.</p>
+    <a href="https://wa.me/989907983843" target="_blank">
+      <button>ارتباط از طریق واتساپ</button>
+    </a>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <h2>نظرات دانش‌آموزان</h2>
+    <p>در آینده این بخش با نظرات واقعی دانش‌آموزان بروزرسانی خواهد شد.</p>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <h2>گالری</h2>
+    <p>در آینده تصاویر و ویدیوهایی از کلاس‌ها در این بخش قرار می‌گیرد.</p>
+  </section>
+
+  <footer>
+    <p>تماس با من: 09907983843 | ایمیل: atefeesmaeilinejhad@gmail.com</p>
+  </footer>
+
+  <script>
+    function toggleLanguage() {
+      const lang = document.documentElement.lang;
+      if (lang === 'fa') {
+        document.documentElement.lang = 'en';
+        document.body.style.direction = 'ltr';
+        document.getElementById("name").innerText = "Atefe Esmaeilinezhad";
+        document.getElementById("title").innerText = "Private Tutor | Elementary Education";
+        document.getElementById("about-text").innerText = "I'm Atefe Esmaeilinezhad, an experienced elementary teacher offering private lessons for students from grades 1 to 6 in subjects such as robotics, Arduino programming, abacus, Rubik’s cube, and computer skills.";
+        document.querySelector('.lang-toggle button').innerText = "فارسی";
+      } else {
+        document.documentElement.lang = 'fa';
+        document.body.style.direction = 'rtl';
+        document.getElementById("name").innerText = "عاطفه اسمعیلی‌نژاد";
+        document.getElementById("title").innerText = "معلم پایه چهارم ابتدایی | تدریس خصوصی دروس و مهارت‌ها";
+        document.getElementById("about-text").innerText = "من عاطفه اسمعیلی‌نژاد، معلم پایه چهارم ابتدایی با تجربه هستم که دروس ابتدایی (پایه اول تا ششم) و مهارت‌های متنوعی مانند رباتیک، برنامه‌نویسی آردوینو، چرتکه، روبیک و کامپیوتر را به صورت خصوصی تدریس می‌کنم.";
+        document.querySelector('.lang-toggle button').innerText = "English";
+      }
+    }
+  </script>
+</body>
+</html>
